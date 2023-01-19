@@ -1,0 +1,35 @@
+#Author zMismo03 Version 1.1
+#Customize messages of plugin
+messages:
+  prefix: '&6&l[&f&lEasy&e&lLuckyblock&6&l]'
+  #Add easylb.break permission to allow players break Luckyblocks
+  deny_break: "&e You don't have permission to break Luckyblocks!"
+  #Add easylb.reload permission to run /easyreload command (aliases /er, /easyr)
+  reload: "&e Plugin reloaded!"
+  no_permission: "&e You don't have permission to use this command!"
+  give_usage: "&e Correct usage of command: /easygive <player> <amount>"
+  player_not_online: "&e This player is not online!"
+  invalid_amount: "&e Invalid amount"
+  received: "&e You have received %amount%x luckyblock!"
+#Customize the material of luckyblock, the commands and the chances of each reward
+#The sum of chances doesn't need to be 100, Easyluckyblock plugin will adapt every chances on its own
+block: 'SPONGE'
+name: '&eLucky&fblock'
+rewards:
+  1:
+    chance: 50
+    command: 'give %player_name% diamond_pickaxe 1'
+    message: "&e It's time to mine!"
+  2:
+    chance: 35
+    command: 'give %player_name% diamond 10'
+    message: "&e You have been given 10 diamonds"
+  3:
+    chance: 10
+    command: 'give %player_name% emerald 5'
+    message: "&e You have been given 5 emeralds"
+  4:
+    chance: 5
+    command: 'xp give %player_name% 5000'
+    message: "&e&l It's your lucky day! You found 5000 XP points"
+#You can add more rewards if you want (example. 4,5,6...remember to put all numbers)

@@ -1,0 +1,17 @@
+name: EasyLuckyblock
+version: '${project.version}'
+main: me.zmismo03.luckyblock.EasyLuckyblock
+authors: [ zMismo03 ]
+description: Plugin to add luckyblocks in your minecraft server (highly customizable)
+commands:
+  easyreload:
+    description: Reload Plugin
+    aliases:
+      - easyr
+      - er
+  easygive:
+    description: Give luckyblock to a certain online player
+    aliases:
+      -
+depend:
+  - PlaceholderAPI
